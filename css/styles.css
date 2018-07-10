@@ -331,8 +331,27 @@ width: 90%;
   color: #333;
 }
 
+/* ====================== Accessibility ====================== */
 
-/* Media queries for more responsive design
+.skip-link {
+	background: #252831;
+	colour: #252831;
+}
+
+.inside .skip-link:hover {
+  text-decoration-color: black;
+}
+
+.hidden
+{position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;}
+
+/* ====================== Media Queries for Responsiveness==== */
+
 @media screen and (max-width: 650px) {
 
 
