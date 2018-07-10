@@ -23,7 +23,7 @@
       <div id="map" role="application" aria-label="Location of restaurants on map" ></div>
     </section>
     <section>
-      <div class="filter-options" aria-label="Filter result options">
+      <div class="filter-options" tabindex="0" aria-label="Filter result options">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-role="Dropdown menu" aria-expanded="false">
           <option value="all">All Neighborhoods</option>
@@ -33,7 +33,7 @@
         </select>
       </div>
 <div class="flex-home">
-      <ul id="restaurants-list" role="list" aria-label="List of restaurants"></ul>
+      <ul id="restaurants-list" tabindex="0" role="list" aria-label="List of restaurants"></ul>
       </div>
     </section>
   </main>

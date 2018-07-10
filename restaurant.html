@@ -20,7 +20,7 @@
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" role="navigation" aria-label="Breadcrumb Navigation Bar">
+    <ul id="breadcrumb" tabindex="0" role="navigation" aria-label="Breadcrumb Navigation Bar">
       <li><a href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
@@ -34,22 +34,22 @@
 <a href="#restaurant-name" class="skip-link hidden">Skip to restaurant information</a>
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map" role="application" aria-label="Map of Restaurant Location"></div>
+      <div id="map" tabindex="0" role="application" aria-label="Map of Restaurant Location"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <div class='flex-restaurant'>
     <section id="restaurant-container" aria-label="Restaurant details">
-      <h1 id="restaurant-name" aria-label="Restaurant Name"></h1>
+      <h1 id="restaurant-name" tabindex="0" aria-label="Restaurant Name"></h1>
       <img id="restaurant-img">
       <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address" aria-label="Restaurant Address"></p>
-      <table id="restaurant-hours" aria-label="Opening Times"></table>
+      <p id="restaurant-address" tabindex="0" aria-label="Restaurant Address"></p>
+      <table id="restaurant-hours" tabindex="0" aria-label="Opening Times"></table>
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
     <section id="reviews-container">
-      <ul id="reviews-list" role="list" aria-label="List of Restaurant Reviews"></ul>
+      <ul id="reviews-list" tabindex="0" role="list" aria-label="List of Restaurant Reviews"></ul>
     </section>
   </div>
     <!-- End reviews -->
