@@ -227,7 +227,7 @@ width: 50%;
   right: 0;
   top: 130px;
   width: 50%;
-	height: 500px;
+	height: 430px;
 	order: -1;
 }
 
@@ -254,7 +254,7 @@ width: 50%;
   text-transform: uppercase;
   line-height: 1.1;
 }
-#restaurants-name img {
+#restaurant-img {
 	width: 100%;
 }
 #restaurant-address {
@@ -279,6 +279,7 @@ width: 50%;
   padding: 140px 40px 30px;
 	flex-flow: column nowrap;
 	order: 0;
+	position: relative;
 }
 
 #reviews-container {
