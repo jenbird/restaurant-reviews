@@ -21,7 +21,7 @@ Set up a simple server:
 In the app folder, set up a simple server. This will allow HTTP requests to serve up the site files on your local computer. This can be done using Python. In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
 
 Loading the app:
-Go to your preferred browser and with you server running, visit the site: `http://localhost:8000`. This app is optimised for Google Chrome.
+Go to your preferred browser and with your server running, visit the site: `http://localhost:8000`. This app is optimised for Google Chrome.
 
 ### Dependencies
 
