@@ -225,7 +225,7 @@ width: 50%;
 .inside #map-container {
   background: #252831 none repeat scroll 0 0;
   position: fixed;
-	height: 100%;
+	height: 82.5vh;
   right: 0;
   top: 130px;
   width: 50%;
@@ -234,6 +234,7 @@ width: 50%;
 
 .inside #map {
   background-color: #ccc;
+	height: 100%;
   width: 100%;
 }
 
@@ -242,7 +243,7 @@ width: 50%;
 	left: 0;
 	height: 65px;
   width: 100%;
-	position: absolute;
+position: fixed;
 	z-index: 1000;
 }
 
@@ -353,20 +354,42 @@ overflow:hidden;}
 
 /* ====================== Media Queries for Responsiveness==== */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 415px) {
 
+	nav h1 a {
+	  font-size: 10pt;
+	  font-weight: 180;
+}
 
+.filter-options select {
+  font-size: 9pt;
+  padding: 15px 10px 15px 10px;
+  width: 160px;
+}
+
+@media screen and (min-width: 416px) and (max-width: 768px) {
+	.filter-options h2 select {
+	  font-size: 9pt;
+		margin-left: 20px;
+	}
+	.filter-options {
+		height: 200px;
+	}
+}
+
+/*
 	.flex-restaurant {
 		display: flex;
 		flex-flow: row wrap;
 	}
+
 
 .inside {
 	flex-flow: row nowrap;
 	max-width: 100vw;
 	width: 100%;
 }
-/*
+
 .inside #map-container {
 width: 100%;
 
@@ -398,15 +421,5 @@ width: 100%;
 	width: 100%;
 order: 3;
 }
-
-.inside #footer {
-	max-width: 100vw;
-	width: 100%;
-}
-
-#breadcrumb {
-	max-width: 100vw;
-	width: 50%;
-}
-}
 */
+}
