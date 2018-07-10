@@ -1,32 +1,30 @@
-# Mobile Web Specialist Certification Course
----
-#### _Three Stage Course Material Project - Restaurant Reviews_
+# Restaurant Review FEND Application
 
-## Project Overview: Stage 1
+## Table of Contents
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+-   [Project Background](#projectbackground)
+-   [Instructions](#instructions)
+-   [Dependencies](#dependencies)
 
-### Specification
+## Project Background
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
+This project was completed as part of the Udacity Google Scholarship (Phase 2, Project 6) and tested for skills in converting a static site to a web and mobile-ready application.
 
-### What do I do from here?
+Starter code was provided by Udacity which was not usable in its given form. Features had to be added to aid accessibility, to ensure the app is accessible for screen reader use and to convert the design to be responsive on different sized displays. Project requirements were to also add a service worker to begin the process of creating a seamless offline experience for users. The original functionality had to be maintained.
 
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
+### Instructions
 
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+Starting the app:
+Download the folder with all files.
 
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
+Set up a simple server:
+In the app folder, set up a simple server. This will allow HTTP requests to serve up the site files on your local computer. This can be done using Python. In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
 
-## Leaflet.js and Mapbox:
+Loading the app:
+Go to your preferred browser and with you server running, visit the site: `http://localhost:8000`. This app is optimised for Google Chrome.
 
-This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
+### Dependencies
 
-### Note about ES6
+Most of the code in this project was written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, ES6 was used to write any additional JavaScript.
 
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
-
-
-
+The site uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information.
