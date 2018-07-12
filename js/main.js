@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 //if (serviceWorker in navigator) {
-navigator.serviceWorker.register('/js/sw.js').then(function() {
+navigator.serviceWorker.register('/sw.js').then(function() {
   console.log('Registration worked!');
 }).catch(function() {
   console.log('Regstration failed!');
