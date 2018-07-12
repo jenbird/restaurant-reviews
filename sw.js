@@ -21,12 +21,18 @@ let filesToCache = [
   '/data/restaurants.json'
 ];
 
+
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(cacheName).then(function(cache) {
       return cache.addAll(filesToCache);
     })
   );
+});
+
+self.addEventListener('activate', function(event) {
+	event.waitUntil(
+		caches.delete(cacheName));
 });
 
 self.addEventListener('fetch', function(event) {
