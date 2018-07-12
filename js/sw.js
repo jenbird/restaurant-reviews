@@ -2,11 +2,11 @@
 
 let cacheName = "restaurantCache-v1";
 let filesToCache = [
-  '/restaurant.html',
   '/index.html',
+  '/restaurant.html',
   '/js/main.js',
-  '/js/dbhelper.js',
   '/js/restaurant_info.js',
+  '/js/dbhelper.js',
   '/css/styles.css',
   '/img/1.jpg',
   '/img/2.jpg',
@@ -21,7 +21,6 @@ let filesToCache = [
   '/data/restaurants.json'
 ];
 
-
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(cacheName).then(function(cache) {
@@ -31,13 +30,11 @@ self.addEventListener('install', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request)
-    .then(function(response) {
-      if (response) {
-        return response;
-      }
-      return fetch(event.request);
-    })
-  );
+	const url = new URL(event.request.url);
+
+    event.respondWith(
+        caches.match(url.pathname).then(function(response) {
+            return response || fetch(event.request);
+        })
+    );
 });
