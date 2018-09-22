@@ -14,7 +14,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js').then(function(registration) {
+  //For local machine use uncomment line 18 and comment out 19
+  //navigator.serviceWorker.register('/sw.js')
+    navigator.serviceWorker.register('/restaurant-reviews/sw.js', {scope: '/restaurant-reviews/'})
+  .then(function(registration) {
     console.log('Service worker registration succeeded:', registration);
   }, /*catch*/ function(error) {
     console.log('Service worker registration failed:', error);
