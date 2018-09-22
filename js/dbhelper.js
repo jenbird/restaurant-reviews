@@ -8,8 +8,10 @@ class DBHelper {
    * Change this to restaurants.json file location on your server.
    */
   static get DATABASE_URL() {
-    const port = 8000 // Change this to your server port
-    return `http://localhost:${port}/data/restaurants.json`;
+    //For running on a local machine, uncomment lines 12 & 13 and comment out line 14
+    //const port = 8000 // Change this to your server port
+    //return `http://localhost:${port}/data/restaurants.json`;
+    return 'https://jennifersmithuk.github.io/restaurant-reviews/data/restaurants.json'
   }
 
   /**
@@ -150,7 +152,9 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    return (`/img/${restaurant.photograph}`);
+    // //For running on a local machine, uncomment lines 156 and comment out line 157
+    // return (`/img/${restaurant.photograph}`);
+    return (`https://jennifersmithuk.github.io/restaurant-reviews/img/${restaurant.photograph}`);
   }
 
   /**
