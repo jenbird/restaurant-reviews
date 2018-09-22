@@ -15,7 +15,18 @@ Starter code was provided by Udacity which was not usable in its given form. Fea
 ### Instructions
 
 Starting the app:
+The app is live at: https://jennifersmithuk.github.io/restaurant-reviews/
+
+For running on a local machine:
 Download the folder with all files.
+There are a few changes that the code needs to run properly on a local machine:
+- js/dbhelper.js  uncomment lines 12 & 13 and comment out line 14
+- js/dbhelper.js  uncomment line 156 and comment out line 157
+- index.html      uncomment line 17 and comment out line 18
+- index.html      uncomment line 51 and comment out 52
+- restaurant.html uncomment line 21 and comment out 22
+- restaurant.html uncomment line 64 and comment out line 65
+- main.js         uncomment line 18 and comment out 19
 
 Set up a simple server:
 In the app folder, set up a simple server. This will allow HTTP requests to serve up the site files on your local computer. This can be done using Python. In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
