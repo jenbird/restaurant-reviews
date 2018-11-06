@@ -22,10 +22,11 @@ Download the folder with all files.
 There are a few changes that the code needs to run properly on a local machine:
 - js/dbhelper.js  uncomment lines 12 & 13 and comment out line 14
 - js/dbhelper.js  uncomment line 156 and comment out line 157
-- index.html      uncomment line 17 and comment out line 18
-- index.html      uncomment line 51 and comment out 52
+- index.html      uncomment line 18 and comment out line 19
+- index.html      uncomment line 52 and comment out 53
 - restaurant.html uncomment line 21 and comment out 22
-- restaurant.html uncomment line 64 and comment out line 65
+- restaurant.html uncomment line 27 and comment out 28
+- restaurant.html uncomment line 66 and comment out line 67
 - main.js         uncomment line 18 and comment out 19
 
 Set up a simple server:
